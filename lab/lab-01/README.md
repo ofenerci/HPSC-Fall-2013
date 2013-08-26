@@ -5,6 +5,8 @@
 - Access the JANUS supercomputer
 - Learn to run code interactively
 - Learn to submit jobs
+- bitbucket
+- Makefiles
 
 ### Getting started with Janus
 
