@@ -1,5 +1,6 @@
 ## Chaper 1 Lab: Modern Processors
 
+
 ### Goals
 
 - Access the JANUS supercomputer
@@ -10,12 +11,15 @@
     - <em>piplines</em>
     - <em>cache</em>
 
+
 ### Getting started with Janus
+
 
 http://researchcomputing.github.io/support/
 
-### Assignment
 
+
+### Assignment
 
 
 
