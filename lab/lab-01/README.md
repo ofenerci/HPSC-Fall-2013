@@ -1,27 +1,35 @@
 ## Getting Started
 
+We will be using the JANUS supercomputer.
+Please [apply for an account](https://www.rc.colorado.edu/accountrequest) before you come to class.
+
 ### Goals
 
 - Access the JANUS supercomputer
-- Learn to run code interactively
-- Learn to submit jobs
-- bitbucket
+  - Learn to run code interactively
+  - Learn to submit jobs
 - Makefiles
+  - We will use these for building code
+  - Quick introduction
+- Git
+  - Recommended
+  - Use bitbucket, it's private.
+- Assignment
+  - Create a `Makefile` for a benchmark code.
+  - Generate some data using `Python` or another language of your choice
+  - Plot the data (we will help with this)
+  - Check the assignment 
+  - Submit the assignment
 
 ### Getting started with Janus
 
-
 http://researchcomputing.github.io/support/
-
-### Run sample code
 
 ### Makefiles
 
+### Git
+
 ### Assignment
 
-- run the triad code
-- create a script to run in batch
-- plot results (optional tool)
-- Submit for grading
 
 
