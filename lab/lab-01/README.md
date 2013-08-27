@@ -18,14 +18,15 @@ Please [apply for an account](https://www.rc.colorado.edu/accountrequest) before
   - Create a `Makefile` for a benchmark code.
   - Generate some data using `Python` or another language of your choice
   - Plot the data (we will help with this)
-  - Check the assignment 
-  - Submit the assignment
+  - `check` the assignment 
+  - `submit` the assignment
 
 ### Getting started with Janus
 
 http://researchcomputing.github.io/support/
 
 ### Makefiles
+
 
 ### Git
 
