@@ -13,7 +13,7 @@ Please [apply for an account](https://www.rc.colorado.edu/accountrequest) before
   - Quick introduction
 - Git
   - Recommended
-  - Use bitbucket, it's private.
+  - Use [bitbucket](https://bitbucket.org/), it's private.
 - Assignment
   - Create a `Makefile` for a benchmark code.
   - Generate some data using `Python` or another language of your choice
