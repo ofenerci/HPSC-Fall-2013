@@ -12,7 +12,7 @@ We will use JANUS as our main working environment
 
 - linux
 - scheduler
-- ssh tricks
+- `ssh` tricks
 
 #### Linux
 
