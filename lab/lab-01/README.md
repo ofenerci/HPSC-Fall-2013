@@ -29,31 +29,9 @@ http://researchcomputing.github.io/support/
 
 ### Git
 
-[Bitbucket ssh key help](https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git)
-
-To generate an ssh key, type:
-
-    ssh-keygen
-
-When prompted for a filename, enter `id_bitbucket`.  This will create two keys (files) in your `~/.ssh` directory: 
-a public and private key.
-    
-    id_bitbucket.pub 
-    id_bitbucket
-
-Now we add this to our `~/.ssh/config` file.
-
-    touch ~/.ssh/config
-  
-Open the file and add the following lines:
-
-    Host bitbucket.org 
-      IdentityFile ~/.ssh/id_bitbucket
-
-Install the public key on your Bitbucket account.  See [step 6](https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git).
-Make sure everything works:
-
-    ssh -T git@bitbucket.org
+- Create an account on [bitbucket.org](https://bitbucket.org).
+- Add [ssh access](https://gist.github.com/mlunacek/6353920).
+- Create a [repo](#) for this assignment.
 
 ### Assignment
 
