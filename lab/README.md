@@ -43,6 +43,9 @@ We encourage you to use git!
 - We are focusing on OpenMP, MPI, OpenACC
 - Not covered: many-task, map reduce
 
+#### Grading
+
+- `check` and `submit`
 
 
 
