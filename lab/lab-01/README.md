@@ -118,16 +118,22 @@ make run
 Use your favorite plotting language to make a `.png` plot of your data.  Please 
 include correctly labeled `x` and `y` axis and a title that include a description of the JANUS architecture.
 
-Add a `plot` command you your Makefile that will generate `scaling.png` when we type:
-
-```
-make plot
-```
 
 #### Submission
 
-Still working on this. 
+You can check to make sure you have done most of the work by running the `check` command.  In the directory with
+your work, type:
 
+```
+/curc/tools/grading/scripts/check
+```
+
+Please create a tar file of your work and submit it to d2l.  Please name the file `assignment1.tar`.  Please be 
+sure to include the following files:
+- Makefile
+- scaling.png
+- you script file for generating the scaling results
+- any other files your program uses
 
 
 
