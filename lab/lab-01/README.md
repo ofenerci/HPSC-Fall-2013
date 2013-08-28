@@ -14,12 +14,13 @@ Please [apply for an account](https://www.rc.colorado.edu/accountrequest) before
 - Git
   - Recommended
   - Use [bitbucket](https://bitbucket.org/), it's private.
+  - Use [github](https://github.com/), five private with edu address.
 - Assignment
   - Create a `Makefile` for a benchmark code.
   - Generate some data using `Python` or another language of your choice
-  - Plot the data (we will help with this)
-  - `check` the assignment 
+  - Plot the data
   - `submit` the assignment
+  - `check` the assignment 
 
 ### Getting started with Janus
 
@@ -27,14 +28,40 @@ http://researchcomputing.github.io/support/
 
 ### Makefiles
 
+- Quick lecutre
 
-### Git
+### Git (optional)
 
+Learn Git in 15 minutes
+- http://try.github.io/levels/1/challenges/1
+
+Bitbucket
 - Create an account on [bitbucket.org](https://bitbucket.org).
 - Add [ssh access](https://gist.github.com/mlunacek/6353920).
-- Create a [repo](#) for this assignment.
+
+Github
+- Request an edu account on [github.com](https://github.com/edu)
 
 ### Assignment
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
