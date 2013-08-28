@@ -61,6 +61,14 @@ git clone https://github.com/ResearchComputing/HPSC-Fall-2013.git
 We have provided you with a basic `Makefile`. Make sure you can compile the code
 before you move on to the assignment.  To do this, start an interactive session, load the intel module, and type `make`:
 
+Instead of using an interactive session, please `ssh` to one of the following nodes:
+
+```
+ssh janus-compile1
+ssh janus-compile2
+ssh janus-compile3
+ssh janus-compile4
+```
 
 ```
 qsub -I -q janus-debug -l nodes=1:ppn=1
