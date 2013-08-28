@@ -26,6 +26,8 @@ Please [apply for an account ](https://www.rc.colorado.edu/accountrequest) befor
 
 http://researchcomputing.github.io/support/
 
+http://www.admin-magazine.com/HPC/Articles/Environment-Modules
+
 ### Makefiles
 
 - Quick lecutre
