@@ -15,6 +15,9 @@ dummy.o: dummy.c
 clean:
 	rm -f *.o
 
+check:
+	/curc/tools/grading/scripts/check
+
 
 
 

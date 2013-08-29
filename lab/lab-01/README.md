@@ -22,11 +22,12 @@ Please [apply for an account ](https://www.rc.colorado.edu/accountrequest) befor
   - `submit` the assignment
   - `check` the assignment 
 
+
 ### Getting started with Janus
 
-http://researchcomputing.github.io/support/
+You might find this [tutorial](http://researchcomputing.github.io/support/) helpful.
 
-http://www.admin-magazine.com/HPC/Articles/Environment-Modules
+Here is a good tutorial on using [modules](http://www.admin-magazine.com/HPC/Articles/Environment-Modules).
 
 ### Makefiles
 
@@ -45,103 +46,118 @@ Github
 - Request an edu account on [github.com](https://github.com/edu)
 - Add ssh keys in a similar way.
 
-### Assignment
+### Assignment (in 10 steps)
 
-We will be running a simple benchmark experiment from Chapter 1 of your book. 
-To start make sure you have the latest copy of our github repository.
-There are a few ways you can do this:
-* Download the ZIP file
-* Download the TAR ball
-* Clone the repository
+If you have issues with any of these steps, please email us and we will help you get up and running.
 
-```
-git clone https://github.com/ResearchComputing/HPSC-Fall-2013.git
-```
+1. log into JANUS.  Replace `username` with your CU username.
 
-We have provided you with a basic `Makefile`. Make sure you can compile the code
-before you move on to the assignment.  To do this, start an interactive session, load the intel module, and type `make`:
+    ```
+    ssh username@login.rc.colorado.edu
+    ```
 
-```
-qsub -I -q janus-debug -l nodes=1:ppn=1
-module load intel/intel-13.0.0
-make
-```
+  This will take you to a login host.  Type `hostname` to verify.
 
-NOTE: Instead of using an interactive session, please `ssh` to one of the following nodes:
+2. Let's move to a different host so tha we are not running code on the login nodes.  For this assignment, you can use one of the janus-compile* nodes. Type one of the following lines:
 
-```
-ssh janus-compile1
-ssh janus-compile2
-ssh janus-compile3
-ssh janus-compile4
-```
+  ```
+  ssh janus-compile1
+  ssh janus-compile2
+  ssh janus-compile3
+  ssh janus-compile4
+  ```
 
-#### A. Makefile
+3. We will be running a simple benchmark experiment from Chapter 1 of your book.  To start make sure you have the latest copy of our github repository.  To clone the repository (one step, easy to update) type:
 
-Modify the Makefile to use patterns `%` and automatic variables `$@,$<`.  Your goal is to not specify the exact target for any `.c` or `.f90` files. 
-For example, this translates to mean do not include the string literals `dummy.c`,
-`triad.f90` in your final Makefile.  This is exactly what we did in lab.
+    ```
+    git clone https://github.com/ResearchComputing/HPSC-Fall-2013.git
+    ```
 
-#### B. Scaling study
+  You now have a directory structure like `/home/username/HPSC-Fall-2013`. 
 
-Once you have built the `triad` executable, you can run a single experiment 
-by passing the value of `N` as an input.  You can run this on the command line 
-by typing:
+4. Change into the lab01 directory.
 
-```
-echo 10 | ./triad
-```
+  ```
+  cd HPSC-Fall-2013/lab/lab-01
+  ```
 
-You will see the following output.
+5. We have provided you with a basic `Makefile`. Make sure you can compile the code before you move on to the assignment.  To do this load the intel module, and type `make`:
 
-```
- Length:           10    MFLOP/s:    1728.43411262444 
-```
+  ```
+  module load intel/intel-13.0.0
+  make
+  ```
 
-Write a script that will execute this script over the following N values:
+6. __Modify the Makefile__
 
-```
-10, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7, 1e8
-```
+   Use patterns `%` and automatic variables `$@,$<` like we did in lab.  Your goal is to not specify the exact target for any `.c` or `.f90` files. 
+  This means do not include the string literals `dummy.c`,
+  `triad.f90` in your final Makefile.  This is exactly what we did in lab. Type `make` to be sure it is still working.
 
-Your program should create a comma separated file (.csv) named `scaling.csv`.
-Please do not put any spaces after the commas and include the header `key,value`. Your file should look similar to this.
+  ```
+  make
+  ```
 
-```
-key,value
-1,621.206034092470
-10,1591.33477486212
-100,3516.33795512399
-...
-```
+7. __Scaling study__
 
-Add a `run` target to your Makefile that will generate `scaling.csv` when we type:
+  Once you have built the `triad` executable, you can run a single experiment by passing the value of `N` as an input.  You can run this on the command line by typing:
 
-```
-make run
-```
+  ```
+  echo 10 | ./triad
+  ```
 
-#### C. Plot
+  You will see the following output.
 
-Use your favorite plotting language to make a `.png` plot of your data.  Please 
-include correctly labeled `x` and `y` axis and a title that include a description of the JANUS architecture.
+  ```
+   Length:           10    MFLOP/s:    1728.43411262444 
+  ```
+
+  Write a script that will execute this script over the following N values:
+
+  ```
+  10, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7, 1e8
+  ```
+
+  Your program should create a comma separated file (.csv) named `scaling.csv`.
+  Please do not put any spaces after the commas and include the header `key,value`. Your file should look similar to this.
+
+  ```
+  key,value
+  1,621.206034092470
+  10,1591.33477486212
+  100,3516.33795512399
+  ...
+  ```
+
+8. Add a `run` target to your Makefile that will generate `scaling.csv` when we type:
+
+  ```
+  make run
+  ```
+
+9. __Plot__
+
+  Use your favorite plotting language to make a `.png` plot of your data.  Please include correctly labeled `x` and `y` axis and a title that include a description of the JANUS architecture.  Here is the one from lab, please feel free to copy it if you'd like.
+
+  ```
+  Performance vs Array Size \nIntel Xeon CPU X5660 @ 2.80GHz 12288 KB Cache
+  ```
 
 
-#### Submission
+10. __Submission__
 
-You can check to make sure you have done most of the work by running the `check` command.  In the directory with
-your work, type:
+  You can check to make sure you have done most of the work by running the `check` command.  In the directory with your work, type:
 
-```
-/curc/tools/grading/scripts/check
-```
+  ```
+  /curc/tools/grading/scripts/check
+  ```
 
-Please create a tar file of your work and submit it to d2l.  Please name the file `assignment1.tar`.  Please be 
-sure to include the following files:
-- Makefile
-- scaling.png
-- you script file for generating the scaling results
-- any other files your program uses
+  I've added the `make check` to the repository `Makefile`. Please create a tar file of your work and submit it to d2l.  Please name the file 
+  assignment1.tar`.  Please be sure to include the following files:
+  - Makefile
+  - scaling.png
+  - you script file for generating the scaling results
+  - any other files your program uses
 
 
 
