@@ -81,10 +81,10 @@ If you have issues with any of these steps, please email us and we will help you
   cd HPSC-Fall-2013/lab/lab-01
   ```
 
-5. We have provided you with a basic `Makefile`. Make sure you can compile the code before you move on to the assignment.  To do this load the intel module, and type `make`:
+5. We have provided you with a basic `Makefile`. Make sure you can compile the code before you move on to the assignment.  To do this load the intel module (via Tim's module), and type `make`:
 
   ```
-  module load intel/intel-13.0.0
+  module load HPSC_CLASS/setup1
   make
   ```
 
