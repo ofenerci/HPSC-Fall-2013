@@ -67,7 +67,9 @@ In addition to anything that `make` prints out, we will be looking for <b>three<
     MFLOPS  = 271.003
     latency = 10.332
 
-The time is in seconds, the MFLOPS is Mega Floating Point Operations per Second, and the latency is in seconds.
+The time is in seconds, the MFLOPS is Mega Floating Point Operations per Second, and the latency is in seconds.  You should also
+print out the value of `pi` that you calculate to make sure the compiler does not optimize your code too much (e.g. it will
+not enter the loop if you don't use the value).
 
 #### Report
 
