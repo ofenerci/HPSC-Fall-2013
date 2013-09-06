@@ -1,4 +1,3 @@
-
 GCC = g++
 ICC = icc
 PI = pi.cpp
@@ -29,7 +28,7 @@ gcc-novec: $(PI)
 	./$(PIEXE)	
 
 gcc-fast: $(PI)
-	$(GCC) -Ofast $(PI) -o $(PIEXE)
+	$(GCC) -O3 $(PI) -o $(PIEXE)
 	./$(PIEXE)
 
 matrix-multiply: matrix_multiply.py
