@@ -8,7 +8,7 @@ VB = matrixB
 VC = matrixC
 
 intel-slow: $(PI)
-	$(ICC)  -O0 $(PI) -o $(PIEXE)
+	$(ICC)  -O0 -no-vec $(PI) -o $(PIEXE)
 	./$(PIEXE)
 
 intel-novec: $(PI)
@@ -36,6 +36,9 @@ matrix-multiply: matrix_multiply.py
 
 cpuinfo:
 	cat /proc/cpuinfo | grep 'cpu MHz'
+
+check:
+	/curc/tools/grading/scripts/check
 
 clean:
 	rm -f $(PIEXE)
