@@ -128,7 +128,7 @@ Please submit:
 ### Part A
 
 - Correct values (3) for each test (6):   18 points
-- Note: we are not grading __gcc-slow__
+- Note: we are not grading __gcc-slow__ or __intel-slow__ (e.g. free 6 points!)
 - Table summarizing the results:          10 points
 
 ### Part B
