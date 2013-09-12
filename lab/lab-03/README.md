@@ -22,7 +22,7 @@ Total points: 30
 
 ### Part B: Matrix Multiply Performance
 
-Compare the perormance of your matrix multiply implementation with the Intel Math Kernel Library (MKL) using HDF5 (`matrix_multiply.cpp`).  Run several experiments and include a graph of the runtime in seconds on the *y axis* and the problem size on the *y axis*.  Please also include a graph that shows the level 2 and 3 cache misses (*y axis*) for each experiment you run (problem size, *x axis*). Please feel free to modify the code as needed.
+Compare the performance of your simple matrix multiply implementation with the one using the Intel Math Kernel Library (MKL) using HDF5 (`matrix_multiply.cpp`).  Run several experiments and include a graph of the runtime in seconds on the *y axis* and the problem size on the *y axis*.  Please also include a graph that shows the level 2 and 3 cache misses (*y axis*) for each experiment you run (problem size, *x axis*). Please feel free to modify the code as needed.
 
 Your report should include:
 - 10 points: a *short description* of your experiment(s). 
@@ -38,7 +38,7 @@ Please use the lab 3 module.
     module load HPSC_CLASS/lab03
 
 #### Matrix files:
-You will probably be testing larger problems.  Please do do any multiplication tests that are over 28000x28000 as it will likely crash the nodes.  Also, please only work on a reserved node.  You can test small problems on janus-compile, but for anythign substantial, you'll need to have an entire node (e.g. `nodes=1:ppn=12`).
+You will probably be testing larger problems.  Please do not perform any multiplication tests that are over 28000x28000 as it will likely crash the nodes.  Also, please only work on a reserved node and use the scratch file system /lustre/janus_scratch/$USER. For more information about the storage available on the Janus supercomputer see [https://www.rc.colorado.edu/services/storage/filesystemstorage].  You can test small problems on janus-compile, but for anything substantial, you'll need to have an entire node (e.g. `nodes=1:ppn=12`).
 
 #### Running code
 The code base contains `generate_matrix.py` that you can use to generate matrix files.  The command
