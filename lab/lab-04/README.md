@@ -34,7 +34,7 @@ The accuracy should be small (maybe I should have called this the abs difference
 
 This is the script we will use to grade your homework.  Please use it for testing!
 
-## Grading
+## Part A
 
 We will run 5 different matrix multiplications on your code.  The correct answer is worth 5 points each.  Your accuracy values should be less than `1.0e-02`. With very little work, you should be able to take your __naive__ implementation and re-order the loops to obtain the following results.
 
@@ -57,6 +57,21 @@ If you have the correct answer and you are no more than 10% higher than these va
     800,1.05097198486,0.124593019485
     1600,7.25710391998,0.906764030457
     3200,56.4555110931,6.44543194771
+    
+__NOTE__: our test may not include square matrix files.    
+
+## Part B
+
+You will turn in the `psrun` output for each test listed above.  Please name the files exactly so that we can procees them.
+
+    output.200.200
+    output.400.400
+    output.800.800
+    output.1600.1600
+    output.3200.3200
+
+You will get 25 points for a correctly generated file.  
+
 
 ## What to turn in?
 
