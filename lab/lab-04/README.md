@@ -78,7 +78,7 @@ You will get 25 points for a correctly generated file.
 At the minimum, you should have a:
 - Makefile
 - At least one source file
-
+- All 5 correctly named `psrun` output files.
 
 
 
