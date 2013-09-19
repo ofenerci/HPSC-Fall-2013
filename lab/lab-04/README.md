@@ -1,7 +1,8 @@
 #Lab 04 Matrix Multiply with Data Access Optimization
 
 
-Notebook on [understanding data access](http://nbviewer.ipython.org/6608757).
+- Notebook on [understanding data access](http://nbviewer.ipython.org/6608757).
+- Notebook on [using psrun](http://nbviewer.ipython.org/6612772)
 
 
 __Due: October 1, 2013__
