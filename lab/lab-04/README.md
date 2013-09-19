@@ -1,5 +1,9 @@
 #Lab 04 Matrix Multiply with Data Access Optimization
 
+
+Notebook on [understanding data access](http://nbviewer.ipython.org/6608757).
+
+
 __Due: October 1, 2013__
 
 You will improve the runtime performance of your `matrix_multiply` from lab 03 by optimizing the way your program manages data.  Specifically, you will be finding the best loop order and block size for your matrix multiply.
