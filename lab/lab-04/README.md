@@ -80,6 +80,12 @@ You will get 25 points for a correctly generated file.
 
 ## What to turn in?
 
+Please use the new [submission instructions](https://github.com/ResearchComputing/HPSC-Fall-2013/tree/master/lab/submission_instructions).  Your 
+directory is located here:
+        
+        /curc/tools/grading/assignments/assignment-04/$USER
+
+
 At the minimum, you should have a:
 - Makefile
 - At least one source file
