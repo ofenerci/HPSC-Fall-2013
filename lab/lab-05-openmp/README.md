@@ -6,7 +6,8 @@ This assignment *should* be quick.  We will do more with OpenMP in the next few 
 
 ##Matrix Multiply
 
-Take you matrix multiply from the assignment four and make it even faster by adding shared-memory parallelism with OpenMP.  As in [lab 04](https://github.com/ResearchComputing/HPSC-Fall-2013/tree/master/lab/lab-04), please test your code with the `compare.py` file.  We will be using this to test your code also.  
+Take you matrix multiply from the assignment four and make it even faster by adding shared-memory parallelism with OpenMP.  As in [lab 04](https://github.com/ResearchComputing/HPSC-Fall-2013/tree/master/lab/lab-04), please test your code with the `compare.py` file.  We will be using this to test your code also.
+**Make it easier on yourself**: don't worry about blocking and simply parallelize the naive with the correct loop order.
 
 Use the following module for building your code:
 
