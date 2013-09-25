@@ -2,7 +2,6 @@
 * FILE: omp_bug4.c
 * DESCRIPTION:
 *   This program compiles and runs fine, but produces the wrong result.
-*   Compare to omp_orphan.c.
 * AUTHOR: Blaise Barney  6/05
 * LAST REVISED: 06/30/05
 ******************************************************************************/
