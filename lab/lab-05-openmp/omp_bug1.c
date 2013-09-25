@@ -3,7 +3,7 @@
 * DESCRIPTION:
 *   This example attempts to show use of the parallel for construct.  However
 *   it will generate errors at compile time.  Try to determine what is causing
-*   the error.  See omp_bug1fix.c for a corrected version.
+*   the error.
 * AUTHOR: Blaise Barney  5/99
 * LAST REVISED: 04/06/05
 ******************************************************************************/
