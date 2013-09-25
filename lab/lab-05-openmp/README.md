@@ -4,7 +4,7 @@
 
 This assignment *should* be quick.  We will do more with OpenMP in the next few weeks as we talk more about parallelism.
 
-__DUE: October 1st, 2013__
+__DUE: October ??, 2013__
 
 ## In lab discussion
 
@@ -13,8 +13,9 @@ Please submit the following programs to the appropriate dropbox
 ### hello_world.c (5 points)
 
 Write a program that prints the following output
+
 Total number of tasks: #   
-Hello world from taks: # 
+Hello world from tasks: # 
 
 Can you also make it so that it also works with a non-openmp compiler
 
