@@ -2,6 +2,8 @@
 
 ## In lab exercise
 
+Please submit the following programs to the appropriate dropbox
+
 ### hello_world.c
 
 Write a program that prints the following output
