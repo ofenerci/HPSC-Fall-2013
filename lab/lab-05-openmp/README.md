@@ -1,10 +1,16 @@
 #Lab 05: OpenMP
 
-## In lab exercise
+## Homework to turn in
+
+This assignment *should* be quick.  We will do more with OpenMP in the next few weeks as we talk more about parallelism.
+
+__DUE: October 1st, 2013__
+
+## In lab discussion
 
 Please submit the following programs to the appropriate dropbox
 
-### hello_world.c
+### hello_world.c (5 points)
 
 Write a program that prints the following output
 Total number of tasks: #   
@@ -12,16 +18,9 @@ Hello world from taks: #
 
 Can you also make it so that it also works with a non-openmp compiler
 
-### Bug 1-4
+### Bug 1-4 (5 points for each bug fix)
 
-Download the code and fix the bugs. Bug2 gives you a run-time bug.
-
-
-## Homework to turn in
-
-__DUE: October 1st, 2013__
-
-This assignment *should* be quick.  We will do more with OpenMP in the next few weeks as we talk more about parallelism.
+Download the code and fix the bugs. Bug3 gives you a run-time bug.
 
 ##Matrix Multiply
 
