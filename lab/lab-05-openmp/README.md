@@ -29,7 +29,7 @@ Can you also make it so that it also works with a non-openmp compiler
         
 - The second program computes the wrong results
 - The third program will segmentation fault
-- The fourth program will give you a wrong result
+- The fourth program will give you a wrong result (also, you will need to pass `sum` to the function to get the correct result).
 
 Download the code and fix the bugs.
 
