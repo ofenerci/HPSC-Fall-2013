@@ -4,7 +4,7 @@
 
 This assignment *should* be quick.  We will do more with OpenMP in the next few weeks as we talk more about parallelism.
 
-__DUE: October ??, 2013__
+__DUE: October 11, 2013__
 
 ## In lab discussion
 
