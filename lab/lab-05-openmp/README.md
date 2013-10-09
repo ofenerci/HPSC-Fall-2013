@@ -22,16 +22,16 @@ Can you also make it so that it also works with a non-openmp compiler
 ### Bug 1-4 (5 points for each bug fix)
 
 - The first program doesn't compile.  Getting it to compile is sufficient.
-- The next three either seg-fault or give the wrong answer.  Run them with
-        
-                export OMP_NUMP_THREADS=1
+- The next three either seg-fault or give the wrong answer.  You can figure out the correct results by runnign the code on a single thread.
 
-        to see the correct results.
+        export OMP_NUMP_THREADS=1
+
+        
 - The second program computes the wrong results
 - The third program will segmentation fault
 - The fourth program will give you a wrong result
 
-Download the code and fix the bugs. Bug3 gives you a run-time bug.
+Download the code and fix the bugs.
 
 ##Matrix Multiply (10 points)
 
