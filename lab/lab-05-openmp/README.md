@@ -8,7 +8,7 @@ __DUE: October 11, 2013__
 
 ## In lab discussion
 
-Please submit the following programs to the appropriate dropbox
+Please submit the following programs (hello_worlrd.c and the corrected openmp programs) to the dropbox on D2L
 
 ### hello_world.c (5 points)
 
@@ -34,6 +34,8 @@ Can you also make it so that it also works with a non-openmp compiler
 Download the code and fix the bugs.
 
 ##Matrix Multiply (10 points)
+
+Submitt per instructions below
 
 Take you matrix multiply from the assignment four and make it even faster by adding shared-memory parallelism with OpenMP.  As in [lab 04](https://github.com/ResearchComputing/HPSC-Fall-2013/tree/master/lab/lab-04), please test your code with the `compare.py` file.  We will be using this to test your code also.
 **Make it easier on yourself**: don't worry about blocking and simply parallelize the naive with the correct loop order.
