@@ -58,7 +58,7 @@ if __name__ == '__main__':
     cmd += ' L=' + str(args.l)
     cmd += ' I=' + str(args.i)
     cmd += ' N=' + str(args.n)
-
+    print cmd
     tic = time.time()
     pid = subprocess.Popen(cmd, shell=True, 
                             stdout = subprocess.PIPE,
@@ -76,7 +76,10 @@ if __name__ == '__main__':
                 #print i,j, tmp
                 B[i, j] = float(tmp)
             i += 1
-            
-    print 'difference: ', np.abs(np.sum(A-B))
+
+    N = A.shape[0]     
+    print 'difference: ', np.abs(np.sum(A[1:N-1,1:N-1]-B[1:N-1,1:N-1]))
     print 'time:       ', processtime
+
+
     
