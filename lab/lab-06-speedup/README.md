@@ -103,7 +103,7 @@ Please use the new submission instructions. Your directory is located here:
 
 At the minimum, you should have:
 
-- Makefile.
+- Makefile.  Include `make` to build your code, `make clean` to remove object files and executables, and `make run` as described above.
 - All the source code (at least one source file) for the heat equation.
 - A report in PDF format.
 
