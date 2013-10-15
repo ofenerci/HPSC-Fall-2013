@@ -76,6 +76,24 @@ We will change the input parameters.  It is necessary that your `Makefile` is wo
 
 	make run 
 
+Here are a few examples from my Makefile.
+
+With `N=10`
+
+	login01 >make check N=10 B=1 L=1 I=1000
+	python compare_jacobi.py -t=2 -b=1 -r=1 -l=1 -i=1000 -n=10
+	make run T=2 B=1 R=1 L=1 I=1000 N=10
+	difference:  4.35576019697e-11
+	time:        0.498589992523
+
+With `N=20`
+
+	login01 >make check N=20 B=1 L=1 I=1000
+	python compare_jacobi.py -t=2 -b=1 -r=1 -l=1 -i=1000 -n=20
+	make run T=2 B=1 R=1 L=1 I=1000 N=20
+	difference:  4.12878620182e-11
+	time:        4.25668883324
+
 
 ## What to turn in?
 
