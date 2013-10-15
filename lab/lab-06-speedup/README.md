@@ -62,9 +62,20 @@ Please clearly label your graphs and provide a brief explanation of what you obs
 
 ## Grading
 
-Your report will be worth 10 points per plot plus 5 for the description.  This is a total of 45 points.  We run 3 tests on your jacobi code to verify it works.  The is worth 30 points.
+Your report will be worth 10 points per plot plus 5 for the description.  This is a total of 45 points. 
+We run 3 tests on your jacobi code to verify it works.  The is worth 30 points.  This will be based on accuracy
+and speedup.
 
 Total: 75 point
+
+I have added a `Makefile` and a `compare_jacobi.py`.  We will test your code by running the following command several times:
+
+	python compare_jacobi.py -t=2 -b=1 -r=1 -l=2 -i=1000 -n=10
+	
+We will change the input parameters.  It is necessary that your `Makefile` is working as the `compare_jacobi.py` calls
+
+	make run 
+
 
 ## What to turn in?
 
@@ -75,8 +86,10 @@ Please use the new submission instructions. Your directory is located here:
 At the minimum, you should have:
 
 - Makefile.
-- At least one source file for the heat equation.
+- All the source code (at least one source file) for the heat equation.
 - A report in PDF format.
+
+Please do not check in a tar file.  Place all file at the root of your directory `assignment-06/$USER`.
 
 
 
