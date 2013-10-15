@@ -20,7 +20,7 @@ Please create a `Makefile` that accepts a `run` target and 6 parameters:
 
 If we wanted to test your code based on the example from lecture, we will typing the following:
 
-	make run T=2 B=1 R=2 L=1 I=10 N=4
+	make run T=2 B=1 R=1 L=2 I=10 N=4
 
 Your output should be a matrix that represent the solution.  In the previous example, this would look like the following:
 
