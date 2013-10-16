@@ -4,6 +4,9 @@ __DUE: October 25th, 2013__
 
 Simpson`s rule is a widely-used technique for integrating an arbitrary function over specific bounds.  For more details, please see the [wikipedia article](http://en.wikipedia.org/wiki/Simpson's_rule).
 
+Here's the [notebook](http://nbviewer.ipython.org/urls/raw.github.com/ResearchComputing/HPSC-Fall-2013/master/lab/lab-08-integrate/simpsons.ipynb).
+
+
 You will implement an `MPI` version of Simpson's rule capable of running on any number of **even** processors.  Your program will use the functions defined in the `functions.h` file.  We will pass you the following parameters via your `make run` command.
 
 - `L`: lower bound
