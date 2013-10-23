@@ -1,6 +1,6 @@
 #Lab 10: Jacobi OpenMP, MPI, and Hybrid
 
-This assignment is due on **Friday, November 15th, 2012**.
+This assignment is due on **Friday, November 15th, 2013**.
 
 There are four parts to assignment 6.
 
