@@ -9,12 +9,6 @@ We have opened up the following directories:
 
 If please go into your directory and run the grading scripts.  You may make changes to *any part of your code* you'd like.  On **November 15th, 2013** we will close the directories and regrade the assignments.  No changes will be accepted after that point.  Sound fail?
 
-When you are ready for a regrade, send Tim and me an email and in the subject write:
-
-**REGRADE Assignment 1**
-
-Or 2,4, or 5.  We will add you to the list of people that we need to re-grade.
-
 ## Grading scripts
 
 Navigate to your directory.
