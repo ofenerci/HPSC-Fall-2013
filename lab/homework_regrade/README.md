@@ -7,7 +7,7 @@ We have opened up the following directories:
 	/curc/tools/grading/assignments/assignment-04/$USER
 	/curc/tools/grading/assignments/assignment-05/$USER
 
-If please go into your directory and run the grading scripts.  You may make changes to *any part of your code* you'd like.  On **November 15th, 2013** we will close the directories and regrade the assignments.  No changes will be accepted after that point.  Sound fail?
+If please go into your directory and run the grading scripts.  You may make changes to *any part of your code* you'd like.  On **November 15th, 2013** we will close the directories and regrade the assignments.  No changes will be accepted after that point.  Sound fair?
 
 ## Grading scripts
 
