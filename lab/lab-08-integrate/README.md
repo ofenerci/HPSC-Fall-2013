@@ -41,23 +41,5 @@ Your ouput shoule be parsable and look like the following:
 
 ## What to turn in?
 
-Please use the new submission instructions. Your directory is located here:
-
-    /curc/tools/grading/assignments/assignment-08/$USER
-
-At the minimum, you should have:
-
-- Makefile: **make**, **make clean**, **make run**
-- **ALL** your source code.
-- Please no tar files.  From your test directory, just type:
-
-		cp * /curc/tools/grading/assignments/assignment-08/$USER
-
-NOTES:
-
-- `make clean` should remove all executables.
-
-
-
-
+Please see [lab 10]() for new submission instructions.
 
