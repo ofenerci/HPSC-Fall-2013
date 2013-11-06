@@ -46,6 +46,9 @@ We will test your MPI implementation using the following command:
 This is the same arguments used for the OpenMP version with one exception: we are now passing the variable `P`, which is the number of processors.  As with the Simpson's rule, you need to call **mpirun** in your make file.
 
 	mpirun -np $(P$) your_mpi_implementation
+	
+You are required to use the **grid** implementation described in class.  We will look at code to verify.  No credit given for other implementations.
+
 
 ### Hybrid
 
@@ -56,6 +59,8 @@ We will test your MPI implementation using the following command:
 This is the same arguments used for the MPI versions with one important Makefile implementation detail: your hybrid command must call mpirun in the following way.
 
 	mpirun -np $(P$) -bynode -bind-to-core your_mpi_implementation
+
+Again, use the **grid** implementation from above.
 
 ## Grading
 
