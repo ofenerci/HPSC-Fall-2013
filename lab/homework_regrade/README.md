@@ -93,6 +93,46 @@ You can simulate the grading by combining all the checks in a single script.
 
 Run this in each directory, send the output to a file, and count up the number of points you have.
 
+- Assignment 01
+	* 2: 10 points total 
 
+- Assignment 02
+	* **46 points**
+	* 2 - 4: 3 points each 
+	* 5 - 9: 3 points each
+	* 10: 13 points
+	* 9 points free 
+
+- Assignment 04
+	* **100 points**
+	* 2-6: 5 points each (25)
+	* 7-11: 15 points each (75)
+		- 5 accuracy
+		- 5 efficiency
+		- 5 better efficiency
+
+- Assignment 05
+	* **75 points**
+	* 2: hello world 5 points
+	* 3-6: 5 points each (20)
+	* 7-11: 10 points each (50)
+		- 5 accuracy
+		- 5 efficiency
+
+- Assignment 06
+	* 175 points **
+	* 2-4: simpsons 10 points each (40)
+		- 5 accuracy
+		- 5 efficiency
+	* 6-8: openmp 10 each (30)
+		- 5 accuracy
+		- 5 efficiency
+	* 9-11: mpi 10 each (30)
+		- 5 accuracy
+		- 5 efficiency
+	* 12-14: hybrid 10 each (30)
+		- 5 accuracy
+		- 5 efficiency
+	* pdf report: 45 points
 
 
