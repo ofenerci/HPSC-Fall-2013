@@ -256,10 +256,28 @@ Create a new file collectively and release property list identifier.
     
     hid_t file_id = H5Fcreate(filename.c_str(), H5F_ACC_TRUNC, H5P_DEFAULT, plist_id);
 
-Set up the count and offset.
+Assume we want our file to look like the following when I run with 10 processors.
 
-	hsize_t count[2] = {m_rows/size, m_cols};   
-    hsize_t offset[2] = {rank * count[0], 0};
+    python print_file.py test.h5
+    (12, 8)
+    [[ 0.  0.  0.  0.  0.  0.  0.  0.]
+     [ 1.  1.  1.  1.  1.  1.  1.  1.]
+     [ 2.  2.  2.  2.  2.  2.  2.  2.]
+     [ 3.  3.  3.  3.  3.  3.  3.  3.]
+     [ 4.  4.  4.  4.  4.  4.  4.  4.]
+     [ 5.  5.  5.  5.  5.  5.  5.  5.]
+     [ 6.  6.  6.  6.  6.  6.  6.  6.]
+     [ 7.  7.  7.  7.  7.  7.  7.  7.]
+     [ 8.  8.  8.  8.  8.  8.  8.  8.]
+     [ 9.  9.  9.  9.  9.  9.  9.  9.]
+     [ 0.  0.  0.  0.  0.  0.  0.  0.]
+     [ 0.  0.  0.  0.  0.  0.  0.  0.]]
+
+
+How should I setup the count and offset?
+
+	hsize_t count[2] = { What goes here? };   
+    hsize_t offset[2] = {What goes here? };
 
 Simple 2D memory space.
 

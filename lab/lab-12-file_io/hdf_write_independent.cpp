@@ -3,10 +3,10 @@
  *    *  Number of processes is assumed to be 1 or multiples of 2 (up to 8)
  *     */
 #include <iostream>
-
+#include <stdlib.h>   
 #include "mpi.h"
 #include "hdf5.h"
-#include "stdlib.h"
+
 
 int main (int argc, char **argv)
 {
@@ -26,12 +26,20 @@ int main (int argc, char **argv)
 
     int m_rows = 12;
     int m_cols = 8;
+    if( argc == 4 )
+    {
+        m_rows = atoi(argv[2]);
+        m_cols = atoi(argv[3]);
+    }
+
 
     herr_t	status;
 
     //Set up file access property list with parallel I/O access
     hid_t plist_id = H5Pcreate(H5P_FILE_ACCESS);
     H5Pset_fapl_mpio(plist_id, MPI_COMM_WORLD, MPI_INFO_NULL);
+    //int use_gpfs_hints=1;
+    //H5Pset_fapl_mpiposix(plist_id, MPI_COMM_WORLD, use_gpfs_hints);
 
     //Create a new file collectively and release property list identifier.
     hid_t file_id = H5Fcreate(filename.c_str(), H5F_ACC_TRUNC, H5P_DEFAULT, plist_id);
@@ -50,10 +58,9 @@ int main (int argc, char **argv)
     H5Sclose(filespace);
 
     //hyperslab selection parameters
-    hsize_t count[2] = {m_rows/size, m_cols};   
-    hsize_t offset[2] = {rank * count[0], 0};
+    hsize_t count[2] = {};  
+    hsize_t offset[2] = {};
 
-    
     hid_t memspace = H5Screate_simple(2, count, NULL);
 
     //Select hyperslab in the file.

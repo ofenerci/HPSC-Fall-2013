@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include "stdlib.h"
 #include "hdf5.h"
 
 int main(int argc, char ** argv)
@@ -14,6 +15,12 @@ int main(int argc, char ** argv)
 
     int m_rows = 12;
     int m_cols = 8;
+    if( argc == 4 )
+    {
+        m_rows = atoi(argv[2]);
+        m_cols = atoi(argv[3]);
+    }
+
     double * data = new double[m_rows*m_cols];
 
     // Fill with some data
