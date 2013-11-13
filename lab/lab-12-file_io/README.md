@@ -211,16 +211,17 @@ Each process executes a partial write or read call.
 #### Partial Read
 
 Create file space. 
-
-	hsize_t offset[2] = {2,3};
-   	hsize_t count[2] = {m_rows,m_cols};
+    int m_rows = 4;
+    int m_cols = 4; 
+	  hsize_t offset[2] = {  What goes here? };
+   	hsize_t count[2] = { what goes here? };
     status = H5Sselect_hyperslab (space, H5S_SELECT_SET, offset, NULL, count, NULL);
 
 Create memory space.
 
     hsize_t dim_out[2] = {m_rows,m_cols};
-    hsize_t offset_out[2] = {0,0};
-    hsize_t count_out[2] = {m_rows,m_cols};
+    hsize_t offset_out[2] = {what goes here?;
+    hsize_t count_out[2] = {what goes here?};
     hid_t memspace = H5Screate_simple(2,dim_out,NULL); 
 
     status = H5Sselect_hyperslab(memspace, H5S_SELECT_SET, offset_out, NULL, count_out, NULL);
