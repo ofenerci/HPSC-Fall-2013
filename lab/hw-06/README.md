@@ -1,4 +1,4 @@
-#Lab 10: Jacobi OpenMP, MPI, and Hybrid
+#Homework 6: Jacobi OpenMP, MPI, and Hybrid
 
 This assignment is due on **Friday, November 15th, 2013**.
 
