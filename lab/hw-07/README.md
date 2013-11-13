@@ -34,7 +34,7 @@ You will be graded on three characteristics:
 - **threshold**: there will be a minimum accetable runtime for this assignemnt (very easy to make if you have a working algorithm) and you must run under this threshold to get any points.
 - **accuracy**: you must get the correct answer to get any points.
 - **runtime**: you will recieve additional points if you are below a performance runtime.
-- **performance**: **10%** of your grade will be based on your rank in the class.
+- **performance**: **10%** of your grade will be based on your rank in the class.  I'll tell you your rank when you run the check script.
 
 I will have the check scripts ready by Friday, November 22nd.
 
