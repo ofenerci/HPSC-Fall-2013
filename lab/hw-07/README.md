@@ -36,17 +36,18 @@ You will be graded on three characteristics:
 - **threshold**: there will be a minimum accetable runtime for this assignemnt (very easy to make if you have a working algorithm) and you must run under this threshold to get any points.
 - **accuracy**: you must get the correct answer to get any points.
 - **runtime**: you will recieve additional points if you are below a performance runtime.
-- **performance**: **10%** of your grade will be based on your rank in the class.  I'll tell you your rank when you run the check script.
+- **performance**: **10%** of your grade will be based on your rank in the class.
 
-There has been at least one serious complaint aobut the check scripts.  For this assignment, I am not going to provide a check script.  We will discuss this after the break.  You should test your implementation carefully to make sure that:
+There has been at least one serious complaint aobut the check scripts.  As a result, I am not planning on providing a check script for this assignment.  We will discuss this after the break.  You should test your implementation carefully to make sure that:
 
-- You can run problems using `P`={4,9,16,25,36,64} processors.  Note I will only test your code using these P values.
+- You can run problems using `P={4,9,16,25,36,64}` processors.  Note I will only test your code using these P values.
 - The HDF5 files I will be using are similar to the previous assignemnts, specifically using `double` values and a dataset called `DATASET`. Please see [this example](https://github.com/ResearchComputing/HPSC-Fall-2013/blob/master/lab/lab-12-file_io/create_file.py) for details on how to create this file.
 - I will be testing your code with any size, yet square, matrix.
+- I will be using your `Makefile` to test your code.  Please make sure it works.
 
 If you have any questions, please ask!
 
-Please start early.  This one is difficult too.
+Also, please start early as this  is a difficult assignment too.
 
 
 
