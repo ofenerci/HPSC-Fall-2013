@@ -2,6 +2,8 @@
 
 This assignment is due **Friday, December 6th**.
 
+There will **NOT** be a late period for this assignment.
+
 In this assignment you will implement [Cannon's algorithm](http://en.wikipedia.org/wiki/Cannon's_algorithm) for parallel matrix multiply using [parallel IO with HDF5](http://www.nersc.gov/users/training/online-tutorials/introduction-to-scientific-i-o/?show_all=1#toc-anchor-4). 
 
 ##Interface
@@ -25,7 +27,7 @@ We will be running code in the lustre scratch directory for this assignment.  Yo
 
 	/lustre/janus_scratch/hpcs/assignments/assignment-07/$USER
 
-This directory will not be setup until Friday, November 22nd.
+This directory is available.
 
 ##Grading
 
@@ -36,8 +38,15 @@ You will be graded on three characteristics:
 - **runtime**: you will recieve additional points if you are below a performance runtime.
 - **performance**: **10%** of your grade will be based on your rank in the class.  I'll tell you your rank when you run the check script.
 
-I will have the check scripts ready by Friday, November 22nd.
+There has been at least one serious complaint aobut the check script, so for now, I am not going to provide one.  We will discuss this after the break.  You should test your implementation carefully to make sure that:
 
+- You can run problems using `P`={4,9,16,25,36,64} processors.  Note I will only test your code using these P values.
+- The HDF5 files I will be using are similar to the previous assignemnts, specifically using `double` values and a dataset called `DATASET`. Please see [this example](https://github.com/ResearchComputing/HPSC-Fall-2013/blob/master/lab/lab-12-file_io/create_file.py) for details on how to create this file.
+- I will be testing your code with any size, yet square, matrix.
+
+If you have any questions, please ask!
+
+Please start early.  This one is difficult too.
 
 
 
