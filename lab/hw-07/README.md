@@ -38,7 +38,7 @@ You will be graded on three characteristics:
 - **runtime**: you will recieve additional points if you are below a performance runtime.
 - **performance**: **10%** of your grade will be based on your rank in the class.  I'll tell you your rank when you run the check script.
 
-There has been at least one serious complaint aobut the check script, so for now, I am not going to provide one.  We will discuss this after the break.  You should test your implementation carefully to make sure that:
+There has been at least one serious complaint aobut the check scripts.  For this assignment, I am not going to provide a check script.  We will discuss this after the break.  You should test your implementation carefully to make sure that:
 
 - You can run problems using `P`={4,9,16,25,36,64} processors.  Note I will only test your code using these P values.
 - The HDF5 files I will be using are similar to the previous assignemnts, specifically using `double` values and a dataset called `DATASET`. Please see [this example](https://github.com/ResearchComputing/HPSC-Fall-2013/blob/master/lab/lab-12-file_io/create_file.py) for details on how to create this file.
