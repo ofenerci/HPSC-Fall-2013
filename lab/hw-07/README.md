@@ -44,6 +44,11 @@ There has been at least one serious complaint aobut the check scripts.  As a res
 - The HDF5 files I will be using are similar to the previous assignemnts, specifically using `double` values and a dataset called `DATASET`. Please see [this example](https://github.com/ResearchComputing/HPSC-Fall-2013/blob/master/lab/lab-12-file_io/create_file.py) for details on how to create this file.
 - I will be testing your code with any size, yet square, matrix.
 - I will be using your `Makefile` to test your code.  Please make sure it works.
+- This assignment will have 10 tests, each worth 15 points:
+	- 5 points for minimum threshold
+	- 5 points for accuracy
+	- 5 points for performance threshold
+- The final 15 points will be based on your rank.
 
 If you have any questions, please ask!
 
