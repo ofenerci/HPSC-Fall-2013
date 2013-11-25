@@ -58,6 +58,12 @@ If you have any questions, please ask!
 
 Also, please start early as this  is a difficult assignment too.
 
+##Advice
+
+- If you don't have a working program, you will not get any points.
+- With that in mind, start simple and make sure you have the parallel algorithm down first.
+	- e.g. You can put off the parallel IO until the end if necessary.
+- The gather method that you wrote for the previous assignment should drop right in.  This is a great debugging tool.
 
 
 
