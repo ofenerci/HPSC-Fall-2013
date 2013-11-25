@@ -17,7 +17,7 @@ Please have your *Makefile* accept 4 values:
 
 If we type
 
-	make A=matrix_a.hdf5 B=matrix_b.hdf5 C=output_test1.hdf5 P=10
+	make run A=matrix_a.hdf5 B=matrix_b.hdf5 C=output_test1.hdf5 P=10
 
 your *Makefile* should call `mpirun -np $(P)` and pass the executable with the values of A, B, and C. 
 
@@ -43,7 +43,11 @@ There has been at least one serious complaint aobut the check scripts.  As a res
 - You can run problems using `P={4,9,16,25,36,64}` processors.  Note I will only test your code using these P values.
 - The HDF5 files I will be using are similar to the previous assignemnts, specifically using `double` values and a dataset called `DATASET`. Please see [this example](https://github.com/ResearchComputing/HPSC-Fall-2013/blob/master/lab/lab-12-file_io/create_file.py) for details on how to create this file.
 - I will be testing your code with any size, yet square, matrix.
-- I will be using your `Makefile` to test your code.  Please make sure it works.
+- I will be using your `Makefile` to test your code.  Please make sure it works. 
+	- 'make' must build your code.
+	- The 'make run' command must execute the trail.
+	- We will not be fixing Makefiles or code to make this process work.
+	- There will be no partial credit for failed builds or trials.
 - This assignment will have 10 tests, each worth 15 points:
 	- 5 points for minimum threshold
 	- 5 points for accuracy
