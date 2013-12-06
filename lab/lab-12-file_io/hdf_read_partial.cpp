@@ -41,13 +41,13 @@ int main(int argc, char ** argv)
 
     // Select from the file
 
-    hsize_t count[2] = {};
+    hsize_t count[2] = {4,4};
     status = H5Sselect_hyperslab (space, H5S_SELECT_SET, offset, NULL, count, NULL);
 
     // Create memory space
-    hsize_t dim_out[2] = {};
-    hsize_t offset_out[2] = {};
-    hsize_t count_out[2] = {};
+    hsize_t dim_out[2] = {m_rows, m_cols};
+    hsize_t offset_out[2] = {0,0};
+    hsize_t count_out[2] = {m_rows, m_cols};
 
     hid_t memspace = H5Screate_simple(2,dim_out,NULL);   
     status = H5Sselect_hyperslab(memspace, H5S_SELECT_SET, offset_out, NULL, count_out, NULL);

@@ -1,7 +1,4 @@
-/*  
- *   *  This example writes data to the HDF5 file by rows.
- *    *  Number of processes is assumed to be 1 or multiples of 2 (up to 8)
- *     */
+
 #include <iostream>
 #include <stdlib.h>   
 #include "mpi.h"
@@ -58,8 +55,11 @@ int main (int argc, char **argv)
     H5Sclose(filespace);
 
     //hyperslab selection parameters
-    hsize_t count[2] = {};  
-    hsize_t offset[2] = {};
+    // hsize_t count[2] = {m_rows/size, m_cols};  
+    // hsize_t offset[2] = {rank * count[0], 0};
+
+    hsize_t count[2] = {1, m_cols};  
+    hsize_t offset[2] = {rank, 0};
 
     hid_t memspace = H5Screate_simple(2, count, NULL);
 
