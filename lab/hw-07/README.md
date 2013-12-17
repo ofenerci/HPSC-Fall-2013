@@ -48,7 +48,7 @@ There has been at least one serious complaint aobut the check scripts.  As a res
 	- The 'make run' command must execute the trail.
 	- We will not be fixing Makefiles or code to make this process work.
 	- There will be no partial credit for failed builds or trials.
-- This assignment will have 10 tests, each worth 15 points:
+- This assignment will have 9 tests, each worth 15 points:
 	- 5 points for minimum threshold
 	- 5 points for accuracy
 	- 5 points for performance threshold
